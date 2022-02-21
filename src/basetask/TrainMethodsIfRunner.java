@@ -13,7 +13,7 @@ public class TrainMethodsIfRunner {
         System.out.println("метод <returnNewFloat> вернул " + b);
         double n = trainMethodsIf.returnNewDouble(300);
         System.out.println("метод <returnNewFloat> вернул " + n);
-        trainMethodsIf.returnNewBoolean(5>10);
+        trainMethodsIf.returnNewBoolean(5 > 10);
 
     }
 }

@@ -10,7 +10,7 @@ public class TrainMethodsReturnRunner {
         int q = (int) trainMethodsReturn.returnNewLong(10);
         System.out.println("метод <returnNewLong> вернул " + q);
         char w = trainMethodsReturn.returnNewChar('a');
-        System.out.println("метод <returnNewChar> вернул " + w+w);
+        System.out.println("метод <returnNewChar> вернул " + w + w);
         int e = (int) trainMethodsReturn.returnNewFloat(5f);
         System.out.println("метод <returnNewFloat> вернул " + e);
         int r = (int) trainMethodsReturn.returnNewDouble(12);

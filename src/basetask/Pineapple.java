@@ -5,8 +5,8 @@ public class Pineapple {
     double heatCapacity;
 
     public Pineapple(String grade, double heatCapacity) {
-        setGrade(grade);
-        setHeatCapacity(heatCapacity);
+        this.grade = grade;
+        this.heatCapacity = heatCapacity;
 
 //        this.grade = grade;
 //        this.heatCapacity = heatCapacity;
@@ -31,9 +31,9 @@ public class Pineapple {
     public void printPineappleDetails() {
         int x = (int) heatCapacity;
         if (x > 2140) {
-            System.out.println("Я ананас, теплоемкость которого больше, чем у " + getGrade());
+            System.out.println("Я ананас, теплоемкость которого больше, чем у " + this.grade);
         } else {
-            System.out.println("В " + getGrade() + "тепла запасется больше :(");
+            System.out.println("В " + this.grade + "тепла запасется больше :(");
         }
     }
 }

@@ -7,7 +7,7 @@ public class TrainMethodsPrimitiveRunner {
         TrainMethodsPrimitive trainMethodsPrimitive = new TrainMethodsPrimitive();
         trainMethodsPrimitive.printInt(20);
         trainMethodsPrimitive.printLong(100500);
-        trainMethodsPrimitive.printChar( 'a');
+        trainMethodsPrimitive.printChar('a');
         trainMethodsPrimitive.printFloat(5f);
         trainMethodsPrimitive.printDouble(5.112233);
         trainMethodsPrimitive.printShort((short) 5);

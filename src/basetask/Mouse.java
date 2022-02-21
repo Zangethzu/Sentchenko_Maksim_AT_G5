@@ -6,8 +6,8 @@ public class Mouse {
     private int age;
 
     public Mouse(String name, int age) {
-        setName(name);
-        setAge(age);
+        this.name = name;
+        this.age = age;
     }
 
     public String getName() {
@@ -27,7 +27,7 @@ public class Mouse {
     }
 
     public void printMouseDetails() {
-        System.out.println("Я мышь, меня зовут " + getName() + "и мне " + getAge());
+        System.out.println("Я мышь, меня зовут " + this.name + "и мне " + this.age);
     }
 
 }
