@@ -14,18 +14,22 @@ public class Car extends Vehicle implements Movable {
     }
 
     public String getModel() {
+
         return model;
     }
 
     public void setModel(String model) {
+
         this.model = model;
     }
 
     public Wheel[] getWheels() {
+
         return wheels;
     }
 
     public void setWheels(Wheel[] wheels) {
+
         this.wheels = wheels;
     }
 

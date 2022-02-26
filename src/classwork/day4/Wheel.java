@@ -11,18 +11,22 @@ public class Wheel {
     }
 
     public int getDiametr() {
+
         return diametr;
     }
 
     public void setDiametr(int diametr) {
+
         this.diametr = diametr;
     }
 
     public String getType() {
+
         return type;
     }
 
     public void setType(String type) {
+
         this.type = type;
     }
 

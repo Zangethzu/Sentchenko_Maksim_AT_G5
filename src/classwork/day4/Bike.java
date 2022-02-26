@@ -8,11 +8,13 @@ public class Bike extends Vehicle implements Movable {
 
     @Override
     public void start() {
+
         System.out.println("Bike has started");
     }
 
     @Override
     public void stop() {
+
         System.out.println("Bike has stopped");
     }
 }
