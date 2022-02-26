@@ -2,7 +2,7 @@ package classwork.day4;
 
 public class VehicleProcessor {
 
-    public void processCar(Car car) {
+    public void printInfoCar(Car car) {
         System.out.println("name is: " + car.getName());
         System.out.println("сolor is: " + car.getColor());
         System.out.println("speed is: " + car.getSpeed());
@@ -17,11 +17,32 @@ public class VehicleProcessor {
         }
 
     }
-    public void processBike(Bike bike) {
+    public void printInfoBike(Vehicle vehicle) {
+        System.out.println("name is: " + vehicle.getName());
+        System.out.println("сolor is: " + vehicle.getColor());
+        System.out.println("speed is: " + vehicle.getSpeed());
+        System.out.println("model is: " + vehicle.getModel());
+
+    }
+
+    public void printInfoBike(Bike bike) {
         System.out.println("name is: " + bike.getName());
         System.out.println("сolor is: " + bike.getColor());
         System.out.println("speed is: " + bike.getSpeed());
+        System.out.println("model is: " + bike.getModel());
 
         }
 
+    public void printInfoBoeing(Boeing boeing) {
+        System.out.println("name is: " + boeing.getName());
+
+    }
+
+
+    public void startMovable(Movable movable){
+        movable.start();
+    }
+    public void stopMovable(Movable movable){
+        movable.stop();
+    }
 }
