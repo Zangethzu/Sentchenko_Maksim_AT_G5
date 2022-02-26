@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class Car extends Vehicle implements Movable {
 
-    String model;
-    Wheel[] wheels;
+   private String model;
+    private Wheel[] wheels;
 
     public Car(String model, String color, int speed, Wheel[] wheels) {
         super(speed, color);

@@ -2,7 +2,7 @@ package classwork.day4;
 
 public abstract class Machinary {
 
-    String name;
+    protected String name;
 
     public Machinary(String name) {
 

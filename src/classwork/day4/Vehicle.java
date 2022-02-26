@@ -2,8 +2,8 @@ package classwork.day4;
 
 public abstract class Vehicle extends Machinary {
 
-    int speed;
-    String color;
+    protected int speed;
+    protected String color;
 
     public Vehicle(int speed, String color) {
         super("Vehicle");
