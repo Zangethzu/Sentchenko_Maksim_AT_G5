@@ -18,13 +18,13 @@ public class SparklingWater extends Water {
     }
 
     public void pump(Bubble[] bubbles){
-        for (int i = 0; i < this.bubbles.length; i++){
+        for (int i = 0; i < bubbles.length; i++){
             this.bubbles[i] = new Bubble();
         }
     }
     public void degas(){
-        for (Bubble bubble : this.bubbles) {
-            bubble.cramp();
+        for (int i = 0; i < bubbles.length; i++) {
+            Bubble.cramp(i);
         }
     }
 }
