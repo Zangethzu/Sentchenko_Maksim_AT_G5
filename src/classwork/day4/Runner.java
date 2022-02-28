@@ -16,6 +16,12 @@ public class Runner {
                 new Wheel(17, "Summer"),
                 new Wheel(17, "Summer")};
 
+
+        Movable car2 = new Car("Polo","Red", 100,wheels ); //Movable применяем т.к. является интерфейсом. А интерфейс можно применять как родитель
+        Movable bike2 = new Bike(300, "Grey", "Kawasaki",bikeWheels);
+        Movable boeing2 = new Boeing("747");
+
+
         Car car = new Car("Polo","Red", 100,wheels );
         Bike bike = new Bike(300, "Grey", "Kawasaki",bikeWheels);
         Boeing boeing = new Boeing("747");
