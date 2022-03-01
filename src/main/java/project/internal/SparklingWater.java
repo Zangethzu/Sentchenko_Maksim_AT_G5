@@ -24,7 +24,7 @@ public class SparklingWater extends Water {
     }
     public void degas(){
         for (int i = 0; i < bubbles.length; i++) {
-            bubbles.cramp ();
+            bubbles[i].cramp();
         }
     }
 }

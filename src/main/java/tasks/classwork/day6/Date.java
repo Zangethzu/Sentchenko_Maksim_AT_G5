@@ -12,7 +12,7 @@ public class Date {
 
         java.util.Date date = dateFormat.parse("04.06.2012"); // записываем дату
 
-        String text = dateFormat.format(new java.util.Date());
+        String text = dateFormat.format(new Date());
 
 
         System.out.println(text);
