@@ -11,7 +11,8 @@ public class Bottle {
 
     public Bottle(double volume){
         this.volume = volume;
-        this.sparklingWater.getBubbles(new Bubble[(int) (10000 * volume)]);
+        this.sparklingWater.setBubbles(new Bubble[(int) (10000 * volume)]);
+        this.sparklingWater.pump();
     }
 
     public void open (){sparklingWater.degas();}

@@ -9,24 +9,26 @@ public class SparklingWater extends Water {
         super(color, transparency, smell, temperature);
     }
 
-    public Bubble[] getBubbles(Bubble[] bubbles) {
-        return this.bubbles;
-    }
-
     public void setBubbles(Bubble[] bubbles) {
         this.bubbles = bubbles;
     }
-
-    public void pump(Bubble[] bubbles){
+    public Bubble[] getBubbles() {
+        return bubbles;
+    }
+//метод pump который заполняет массив пузырьками
+    public void pump(){
         for (int i = 0; i < bubbles.length; i++){
             this.bubbles[i] = new Bubble();
         }
     }
+    //метод degas который лопает пузырьки
     public void degas(){
         for (int i = 0; i < bubbles.length; i++) {
             bubbles[i].cramp();
         }
+
     }
+
 }
 
 
