@@ -2,17 +2,19 @@ package main.java.tasks.homework.stringtask;
 
 import java.text.*;
 import java.util.Date;
+import java.util.Locale;
 
 public class DateSeptember {
 
-    public void findDate(String[] args) throws ParseException {
+    public static void main(String[] args) throws ParseException {
 
-        SimpleDateFormat myFormat = new SimpleDateFormat("HH.mm dd.MM.yyyy");
-        SimpleDateFormat newFormat = new SimpleDateFormat("dd.MM.yyyy HH.mm");
+        String goDate = "14:03 05.03.2022"; //передаю стрингу с датой
 
-//        DateFormat dateSept = new SimpleDateFormat("hh.mm dd.MM.yyyy");
-//        String date1 = dateSept.format("17.11 04.03.2022");
-//        System.out.println(dateSept.format(date));
+        SimpleDateFormat myFormat = new SimpleDateFormat("HH:mm dd.MM.yyyy"); //мой формат даты которой я передал
+        SimpleDateFormat newFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.ENGLISH); //задаю новый формат даты которую хочу
+        Date date = myFormat.parse(goDate); //паршу дату которую я задал
+        String result = newFormat.format(date);//результат стринги должен быть моиим новый форматом
+        System.out.println(result);//принтим
 
     }
 }
