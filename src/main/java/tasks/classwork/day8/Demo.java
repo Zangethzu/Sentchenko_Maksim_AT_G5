@@ -18,13 +18,12 @@ public class Demo {
 //
 //        System.out.println(x);
 
-        BufferedWriter out = new BufferedWriter(new FileWriter("new_file.txt")); // проверяем чт ов файле мы не можем ничего сделат ьпока не закрыли поток. (out close). Когда поток закроется или мы остановим выполнение в файл можно будет сохранить то что нужно.
+        BufferedWriter out = new BufferedWriter(new FileWriter("new_file.txt")); // проверяем что в файле мы не можем ничего сделат ьпока не закрыли поток. (out close). Когда поток закроется или мы остановим выполнение в файл можно будет сохранить то что нужно.
         out.write("мама мыла раму");
 
         while (true){
             Thread.sleep(1000);
         }
 
-//        out.close();
     }
 }
