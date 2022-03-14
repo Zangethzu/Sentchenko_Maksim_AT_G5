@@ -1,6 +1,7 @@
 package main.java.tasks.homework.massives;
 
-public class Arrays {
+public class MyArrays {
+    public static Object asList;
     //написать метод, который подсчитает сумму каждого n-ого элемента в целочисленном массиве,
     //где n - целое число, передаваемое в сигнатуру этого метода
 
