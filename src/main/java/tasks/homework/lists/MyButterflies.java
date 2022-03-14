@@ -10,7 +10,7 @@ import java.util.List;
 // Посчитать сколько бабочек содержат букву "о" и вывести число в консоль
 // Проитерировать список по индексу и отпечатать слова в консоль через пробел
 // Проитерировать список через for-each и отпечатать слова в консоль через перенос строки
-public class Butterflies {
+public class MyButterflies {
 
     public static void main(String[] args) {
 
