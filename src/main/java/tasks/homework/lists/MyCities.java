@@ -19,7 +19,7 @@ public class MyCities {
         }
         System.out.println(count);
 
-        for(int city = 0; city < cities.size(); city++){
+        for (int city = 0; city < cities.size(); city++) {
             System.out.print(cities.get(city) + " ");
         }
     }
