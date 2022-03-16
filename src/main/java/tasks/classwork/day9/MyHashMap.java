@@ -16,6 +16,7 @@ public class MyHashMap {
         for (String i : words.values()){
             System.out.println(i);
         }
+        System.out.println();
 
         for(Map.Entry<Integer,String> entry: words.entrySet()){
             System.out.println(entry.getKey() + " " + entry.getValue());
