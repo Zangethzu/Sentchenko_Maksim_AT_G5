@@ -46,7 +46,7 @@ public class MyFigures {
             System.out.println(figures.get(figure) + " ");
         }
 
-        figures.set(2, "Треугольник"); //почему если пишу 3, то в выводе он стоит четвертым?
+        figures.set(2, "Треугольник");
 
         for (String figure : figures) {
             System.out.println(figure);
