@@ -14,6 +14,6 @@ public class ClassStream3 {
         System.out.println(list.stream().allMatch("м"::contains));
         System.out.println(list.stream().map(x -> x +"м").collect(Collectors.toList()));
         list.stream().map(x -> x +"м" + " ").forEach(System.out::println);
-        System.out.println(list.stream().flatMap(x -> Arrays.stream(x.split("a"))).filter(x -> !x.equals("")).collect(Collectors.toList()));
+        list.stream().flatMap(x -> Arrays.stream(x.split("а"))).filter(x -> !x.equals("")).collect(Collectors.toList()).forEach(System.out::print);
     }
 }
