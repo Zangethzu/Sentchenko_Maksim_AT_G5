@@ -6,11 +6,11 @@ public class IntMaxMin {
     public static void main(String[] args) {
 
         int minValue = 1;
-        int maxValue = 25;
+        int maxValue = 15;
 
-        ArrayList<Integer> list = new ArrayList(); // Создание коллекции
+        ArrayList<Integer> list = new ArrayList();
 
-        for (int i = 1; i < 15; i++) { // Заполнение коллекции последовательностью чисел от 0 до 100
+        for (int i = 1; i < 15; i++) { // Заполнение коллекции последовательностью чисел от 0 до 15
             list.add(i);
         }
         boolean result = list.stream().anyMatch((i -> (i % 3 == 0) && (i % 5 == 0))); // anyMatch Возвращает true, если условие выполняется хотя бы для одного элемента
