@@ -3,15 +3,15 @@ package main.java.tasks.homework.threads;
 public class Mouse {
 
 
-    private String pattern = "Mouse";
+    private String pattern = "Mouse <%d>";
     private String name;
 
-    public Mouse(String number) {
+    public Mouse(int number) {
         this.name = String.format(pattern, number);
     }
 
     public void peep() {
-        System.out.println(String.format("Mouse %s + \n", this.name));
+        System.out.print(String.format("\n"+ "%s PEEP", this.name));
         try {
             Thread.sleep(200);
 
