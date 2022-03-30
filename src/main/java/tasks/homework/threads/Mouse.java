@@ -5,12 +5,10 @@ public class Mouse {
 
     private String pattern = "Mouse";
     private String name;
-    int n;
 
-    public Mouse(int n) {
-        this.n = n;
+    public Mouse(String number) {
+        this.name = String.format(pattern, number);
     }
-
 
     public void peep() {
         System.out.println("Mouse " + "<n>" + "PEEP!");
