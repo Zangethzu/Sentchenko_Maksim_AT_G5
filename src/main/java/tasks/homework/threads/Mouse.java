@@ -11,7 +11,7 @@ public class Mouse {
     }
 
     public void peep() {
-        System.out.println("Mouse " + "<n>" + "PEEP!");
+        System.out.println(String.format("Mouse %s + \n", this.name));
         try {
             Thread.sleep(200);
 
