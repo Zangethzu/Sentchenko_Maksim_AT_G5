@@ -24,7 +24,7 @@ public class MouseThirdTask {
                 krisky.add(mouse);
             }
         }
-        krisky.forEach(p -> p.peep());
+        krisky.forEach(Mouse::peep);
     }
 
     static void shaoKan() {
@@ -35,7 +35,7 @@ public class MouseThirdTask {
                 krisky.add(mouse);
             }
         }
-        krisky.forEach(p -> p.peep());
+        krisky.forEach(Mouse::peep);
     }
 
     static void goro() {
@@ -46,7 +46,7 @@ public class MouseThirdTask {
                 krisky.add(mouse);
             }
         }
-        krisky.forEach(p -> p.peep());
+        krisky.forEach(Mouse::peep);
     }
 
     static void scorpion() {
@@ -57,7 +57,7 @@ public class MouseThirdTask {
                 krisky.add(mouse);
             }
         }
-        krisky.forEach(p -> p.peep());
+        krisky.forEach(Mouse::peep);
     }
 
     static void jarek() {
@@ -68,7 +68,7 @@ public class MouseThirdTask {
                 krisky.add(mouse);
             }
         }
-        krisky.forEach(p -> p.peep());
+        krisky.forEach(Mouse::peep);
     }
 
     static void jade() {
@@ -79,7 +79,7 @@ public class MouseThirdTask {
                 krisky.add(mouse);
             }
         }
-        krisky.forEach(p -> p.peep());
+        krisky.forEach(Mouse::peep);
     }
 
     static void sonya() {
@@ -90,7 +90,7 @@ public class MouseThirdTask {
                 krisky.add(mouse);
             }
         }
-        krisky.forEach(p -> p.peep());
+        krisky.forEach(Mouse::peep);
     }
 
 }
