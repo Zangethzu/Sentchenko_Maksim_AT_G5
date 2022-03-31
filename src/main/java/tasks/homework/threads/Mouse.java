@@ -19,4 +19,10 @@ public class Mouse {
             e.printStackTrace();
         }
     }
+
+    public void onlyPeep() {
+        System.out.print(String.format("\n"+ "%s PEEP", this.name));
+
+    }
+
 }

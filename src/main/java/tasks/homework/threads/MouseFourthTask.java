@@ -5,34 +5,79 @@ import java.util.List;
 
 public class MouseFourthTask {
 
+    //              1.4
+//            - в главном потоке создать коллекцию из 280 мышей
+//            - создать 5 дочерних потоков, в каждом из которых:
+//            - каджые 300мс удалять 1 пикающую мышь
+//            - запустить потоки
     public static void main(String[] args) {
 
-        Thread main = new Thread(MouseFourthTask::numberMice);
-        main.start();
-        System.out.println();
+        List<Mouse> list = getMices();
 
-    }
 
-    static void numberMice() {
-        List<Mouse> krisky = new ArrayList<>();
-        for (int k = 0; k < 281; k++) {
-            krisky.add(new Mouse(k));
+        for (int i = 0; i < 5; i++) {
+            int finalI = i;
+            new Thread(() ->
+            {
+                System.out.println("Start Thread " + finalI);
+                while (list.size() > 0) MouseFourthTask.deleteMouse(list);
+                System.out.println("Finish Thread " + finalI);
+            }).start();
         }
+
+//        new Thread(() ->
+//        {
+//            System.out.println("Start 1 Thread");
+//            while (list.size() > 0) MouseFourthTask.deleteMouse(list);
+//            System.out.println("Finish 1 Thread");
+//        }).start();
+//        new Thread(() ->
+//        {
+//            System.out.println("Start 2 Thread");
+//            while (list.size() > 0) MouseFourthTask.deleteMouse(list);
+//            System.out.println("Finish 2 Thread");
+//        }).start();
+//        new Thread(() ->
+//        {
+//            System.out.println("Start 3 Thread");
+//            while (list.size() > 0) MouseFourthTask.deleteMouse(list);
+//            System.out.println("Finish 3 Thread");
+//        }).start();
+//        new Thread(() ->
+//        {
+//            System.out.println("Start 4 Thread");
+//            while (list.size() > 0) MouseFourthTask.deleteMouse(list);
+//            System.out.println("Finish 4 Thread");
+//        }).start();
+//        new Thread(() ->
+//        {
+//            System.out.println("Start 5 Thread");
+//            while (list.size() > 0) MouseFourthTask.deleteMouse(list);
+//            System.out.println("Finish 5 Thread");
+//        }).start();
     }
 
-        new Thread(MouseThirdTask::perviy).start();
-        new Thread(MouseThirdTask::vtoroy).start();
-        new Thread(MouseThirdTask::tretiy).start();
-        new Thread(MouseThirdTask::chetvertyi).start();
-        new Thread(MouseThirdTask::pyatyi).start();
 
-    public static void perviy(List<Mouse> krisky) {
-        while (krisky.size() > 0) {
-            try {
-                Thread.sleep(300);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+    public static synchronized void deleteMouse(List<Mouse> list) {
+        try {
+            if (list.size() == 0) {
+                return;
             }
+            Mouse m = list.get(0);
+            m.onlyPeep();
+            Thread.sleep(300);
+            list.remove(m);
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+    }
+
+    public static List<Mouse> getMices() {
+        List<Mouse> mouseList = new ArrayList<>();
+        for (int k = 0; k < 281; k++) {
+            mouseList.add(new Mouse(k));
+        }
+        return mouseList;
     }
 }
