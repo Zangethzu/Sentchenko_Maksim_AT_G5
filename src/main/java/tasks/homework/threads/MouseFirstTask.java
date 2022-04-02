@@ -3,6 +3,12 @@ package main.java.tasks.homework.threads;
 import java.util.ArrayList;
 import java.util.List;
 
+//Создать 5 потоков, в каждом из которых:
+//-- создать коллекцию из 20 мышей
+//-- проитерировать коллекцию и пикнуть каждой мышью
+//-- запустить потоки одновременно
+
+
 public class MouseFirstTask {
     public static void main(String[] args) {
         new Thread(MouseFirstTask::lol).start();
