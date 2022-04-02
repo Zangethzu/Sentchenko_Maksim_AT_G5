@@ -14,7 +14,6 @@ public class MouseFourthTask {
 
         List<Mouse> list = getMices();
 
-
         for (int i = 0; i < 5; i++) {
             int finalI = i;
             new Thread(() ->
@@ -56,7 +55,6 @@ public class MouseFourthTask {
 //            System.out.println("Finish 5 Thread");
 //        }).start();
     }
-
 
     public static synchronized void deleteMouse(List<Mouse> list) {
         try {
