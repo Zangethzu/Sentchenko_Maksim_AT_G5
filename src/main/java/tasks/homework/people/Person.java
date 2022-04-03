@@ -1,4 +1,4 @@
-package main.java.tasks.homework.threads.people;
+package main.java.tasks.homework.people;
 
 public class Person {
 
