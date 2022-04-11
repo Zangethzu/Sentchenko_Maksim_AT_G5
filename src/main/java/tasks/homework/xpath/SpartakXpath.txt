@@ -1,0 +1,43 @@
+Лого
+//div[@class="wrapper  h_color_white m_color_none front_page basket_normal head_type_1 banner_auto"]//img[@alt="логотип Спартак"]
+
+Информация для партнеров
+//a[@href="/partners/"]//span[contains(text(),  'Информация для партнеров')]
+//a[@class="has_child"]//span[contains(text(),  'Информация для партнеров')]
+
+Иконка поиска
+//i[@class="search fa search-btn lupa"]
+
+Слепые
+//img[@src="/include/eye.svg"]
+//span[@class="header__eye"]//img[@src="/include/eye.svg"]
+
+Язык рус текущий
+//a[@class="header__lang__item header__lang__item_ru active"]
+
+Язык китайский
+//a[@href="/cn/"]
+//a[contains(text(),'Ch')]
+
+Скачать каталог
+//a[@href="/upload/73640a2e120f6685ebb3e7be63af1f54.pdf"]
+//a[@class="download-catalog"]
+
+Импрессо
+//a[@href="/products/Impresso/"]
+//a[contains(text(),'Импрессо')]
+
+Переход стрелка вправо
+//a[@class="flex-next"]
+//li[@class="flex-nav-next"]//a[@href="#"]
+
+Нижние черточки
+//ol[@class="flex-control-nav flex-control-paging"]//a[contains(text(),'1')]
+
+ВК
+//a[@href="https://vk.com/spartakby"]//img[@src="/bitrix/templates/our_shop/images/VK.svg"]
+//img[@src="/bitrix/templates/our_shop/images/VK.svg"]
+
+Ютуб
+//a[@href="https://www.youtube.com/channel/UC2xYusMBxs4XkwoPotvTw4A"]//img[@src="/bitrix/templates/our_shop/images/youtube.svg"]
+//img[@src="/bitrix/templates/our_shop/images/youtube.svg"]
