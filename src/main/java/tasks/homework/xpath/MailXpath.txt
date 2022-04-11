@@ -1,0 +1,53 @@
+Mail облако
+//a[href="//mail.ru"]
+//a[@title="Mail.ru: почта, поиск в интернете, новости, игры"]
+
+Mail сверху
+//a[@href="https://trk.mail.ru/c/ds8xq6?mt_sub1=mail.ru"]
+//a[contains(text(),  'Mail.ru')]
+
+Войти
+//button[contains(.,'Войти')]
+//button[@data-testid = 'enter-mail-primary']
+
+Войти сверху справа
+//button[@class="ph-login svelte-1hiqrvn"]
+//a[contains(text(),'Регистрация')]/following-sibling::button
+
+Облако
+//a[@href="https://trk.mail.ru/c/pqaft6?mt_sub1=mail.ru"]
+//a[contains(text(),'Облако')]
+
+Регистрация
+//a[@href="//account.mail.ru/signup?from=navi&lang=ru_RU&siteid=169&app_id_mytracker=58519"]
+//a[contains(text(),'Регистрация')]
+
+Иконка поиска
+//label[@class="search__icon svelte-byes78"]
+//input[@id = 'q']/following-sibling::label[1]
+
+Найти
+//button[@id="search:submit"]
+//button[@data-testid="search-button"]
+
+Леди
+//a[@href="//lady.mail.ru/"]
+//a[@data-testid="news-tabs-tab-item-lady"]
+
+Лукашенко и путин
+//a[@href="https://news.mail.ru/politics/50832876/?frommail=1"]
+//li[2][@data-testid="general-news-item-rb"]
+
+Создать почту
+//a[@href="//account.mail.ru/signup?from=main&rf=auth.mail.ru&app_id_mytracker=58519"]
+//a[contains(text(),'Создать почту')]
+
+Подробнее
+//a[@href="https://pogoda.mail.ru/prognoz/minsk/"]
+//a[contains(text(),'Подробнее')]
+
+
+Блок погоды
+//a[@href="https://mail.ru/region?page=https://mail.ru/re"]
+//a[@name="clb1283825"]//img[@src="//pogoda.imgsmail.ru/icons/status/2021/lt/svg/17.svg"]
+//a[@name="clb1283825"]//span[@class="weather__temp svelte-16a8jo"]
